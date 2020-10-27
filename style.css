@@ -1,0 +1,99 @@
+.bg-dark {
+    background-color: black;
+}
+.l1 {
+    margin-left: 20%;
+    margin-top: 5%;
+    animation: line infinite 10s linear;
+}
+.l2 {
+    margin-left: 50%;
+    margin-top: 5%;
+    animation: line infinite 6s linear;
+}
+.road {
+    width: 98%;
+    border: 8px dashed white;
+    margin-top: 30%;
+    margin-bottom: 0%;
+    animation: road infinite 1s linear;
+}
+.line {
+    width: 150px;
+    border: 2px dashed white;
+}
+.pack {
+    margin-top: 20%;
+    margin-left: 40%;
+    position: absolute;
+}
+.packmen {
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    background-color: hsl(60, 71%, 32%);
+    animation: circle infinite 1s;
+}
+.packmen-eye {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: -60px;
+    margin-left: 40px;
+    animation: circle infinite 1s;
+
+}
+.mouth {
+    width: 0;
+    height: 0;
+    border-right: 50px solid black;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+    margin-left: 35px;
+    animation: circle infinite 1s;
+}
+.ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -30px;
+    margin-left: 100px;
+    animation: ball infinite 1s;
+
+}
+@keyframes circle {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+}
+
+@keyframes road {
+   0% { 
+       transform : translateX(0%); 
+    }
+   100% { 
+       transform : translateX(-2%); 
+    }
+}
+
+@keyframes line {
+    0% { 
+        transform : translateX(320%); 
+     }
+    100% { 
+        transform : translateX(-500%); 
+     }
+ }
+
+@keyframes ball {
+    0% { 
+        transform : translateX(0%);
+        opacity: 1; 
+     }
+    100% { 
+        transform : translateX(-350%); 
+        opacity: 0;
+     }
+ }
